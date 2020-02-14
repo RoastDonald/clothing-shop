@@ -3,7 +3,7 @@ import './form-input.styles.scss';
 
 const FormInput = ({handleChange, label, ...restProps}) =>(
     <div className="group">
-        <input class="form-input" onChange={handleChange} {...restProps}/>
+        <input className="form-input" autoComplete="on" onChange={handleChange} {...restProps}/>
         {
             label ?
             (<label className={`${restProps.value.length ? 'shrink' : ''} form-input-label`}>
