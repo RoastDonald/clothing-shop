@@ -10,7 +10,7 @@ import setCurrentUser from './redux/user/user.actions';
 import SignInandSignUpPage from './pages/signin-and-signup/signin-and-signup-component';
 
 class App extends React.Component {
-
+ 
 
   unsubscribeFromAuth = null;
 
