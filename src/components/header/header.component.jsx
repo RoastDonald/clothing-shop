@@ -29,7 +29,7 @@ const Header = ({currentUser, hidden})=>(
             </Link>
             {
                 currentUser?
-                <div className="option" onClick={()=>auth.signOut()}>Sing out</div>
+                <div className="option" onClick={async()=>{ await auth.signOut(); await console.log(currentUser)}}>Sing out</div>
                 :
                 <Link className="option" to="/signin">Sign in</Link>
             }
